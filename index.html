@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mandolin Man</title>
+        <meta name="description" content="A browser game thats fun to play with other people">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/screen.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="no-javascript">
+            <h1>You Need to Enable Javascript!</h1>
+            <h2>This site uses javascript to work. If you can, please <a href="http://www.enable-javascript.com/">enable javascript</a> and refresh this page.</p>
+        </div>
+        <div id="help-text">
+            <h1>Play a Chord</h1>
+            <h2>(Press G, C, D, etc. on your keyboard)</h2>
+        </div>
+        <ul id="chords" class="no-list chords"></ul>
+        <div class="player-wrapper">
+            <div id="player-1" class="player man"><div></div></div>
+        </div>
+        <ul id="waves" class="waves no-list"></ul>
+        <div class="floor">
+            <span id="song-button" class="song-button">Play a Song</span>
+            <ul id="characters" class="no-list characters">
+                <div class="triangle"><span></span></div>
+                <li id="man" class="active"><img src='img/character-man.png' alt="mandolin man"/></li>
+                <li id="mandy"><img src='img/character-mandy.png' alt="mandolin mandy"/></li>
+                <li id="machine" class="locked"><img src='img/character-machine.png' alt="mandolin machine"/></li>
+                <li id="monster" class="locked"><img src='img/character-monster.png' alt="mandolin monster"/></li>
+            </ul>
+        </div>
+        <div id="sounds">
+                <audio><source src="sounds/mandolin_G.mp3"></source><source src="sounds/mandolin_G.ogg"></source></audio>
+        </div>
+        <div id="modal-songs" class="modal song">
+            <span class="arrow">X</span>
+            <div class="song-1">
+                <h1>"Can't Help Falling in Love"</h1>
+                <pre>
+                    <p>C    R   A         F     C   G</p>
+                    <p>Wise men say, only fools rush in </p>
+                    <p>    F  G    A     F          C    H   C</p>
+                    <p>But I can't help falling in love with you</p>
+                    <p>C     R  A             F  C  G</p>
+                    <p>Shall I stay, would it be a sin </p>
+                    <p>   F  G    A     F          C    H    C</p>
+                    <p>If I can't help falling in love with you</p>
+                </pre>
+            </div>
+            <div class="song-2">
+                <h1>"The House of the Rising Sun"</h1>
+                <pre>
+                    <p>      A     C        D      F</p>
+                    <p>There is a house in New Orleans,</p>
+                    <p>      A       C      E </p>
+                    <p>They call the Rising Sun,</p>
+                    <p>      A        C       D           F</p>
+                    <p>It's been the ruin of many a poor boy,</p>
+                    <p>     A      E        A             E </p>
+                    <p>And God, I know, I'm one.</p>
+                </pre>
+            </div>
+            <div class="song-3">
+                <h1>"Swing Low Sweet Chariot"</h1>
+                <pre>
+                    <p>      G          C     G </p>
+                    <p>Swing low, sweet chariot, </p>
+                    <p>G                      S</p>
+                    <p>Comin' for to carry me home. </p>
+                    <p>      G          C     G </p>
+                    <p>Swing low, sweet chariot, </p>
+                    <p>G             S        G </p>
+                    <p>Comin' for to carry me home. </p>
+                </pre>
+            </div>
+            <a id="next-song" class="nextsong-button">Next Song</a>
+        </div>
+        <div id="award-machine" class="modal awards">
+            <span id="arrow" class="arrow">X</span>
+            <h1>You have Unlocked the Mandolin Machine!</h1>
+            <p>Because you played all the chords available you've been reward a new mandolin player! You are so awesome.</p>
+            <img id="machine-image" src='img/character-machine.png' alt="mandolin machine"/>
+        </div>
+        <div id="award-monster" class="modal awards">
+            <span id="arrow" class="arrow">X</span>
+            <h1>You have Unlocked the Mandolin Monster!</h1>
+            <p>Because you played a "Can't Help Falling in Love" by Elvis Presley you've been reward a new mandolin player! You are the best person ever.</p>
+            <img id="monster-image" src='img/character-monster.png' alt="mandolin monster"/>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
