@@ -1,8 +1,17 @@
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
 
-*.scssc
+# Dependency directory
+# Commenting this out is preferred by some people, see
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
+node_modules
+npm-debug.log
 
-*.sassc
+# for bower package management
+bower_components
 
-*.ai
+# for source maps
+*.css.map 
 
-.DS_Store
+# for sass
+.sass-cache
